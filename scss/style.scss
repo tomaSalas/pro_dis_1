@@ -1,0 +1,87 @@
+@import "./header/__index.scss",
+        "./search/__index.scss",
+        "./card/__index.scss",
+        "./model/__index.scss",
+        "./query/__index.scss";
+
+
+/* ===================================== 
+   Public API Request
+======================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    background: rgba(235, 235, 235, 0.9);
+}
+
+
+
+
+/* ===================================== 
+   Media Queries
+======================================== */
+
+/* ===================================== 
+   Tablet
+======================================== */
+
+@media (min-width: 768px) {
+    .header-inner-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    .header-text-container {
+        text-align: left;
+    }
+
+    .search-container {
+        margin-top: 25px;
+    }
+
+    .modal {
+        margin-top: 100px;
+    }
+}
+
+
+/* ===================================== 
+   Desktop
+   Hover styles on desktop 
+======================================== */
+
+@media (min-width: 1024px) {
+
+    .card:hover {
+        background: rgba(255, 255, 255, 1);
+        border: 1px solid rgba(50, 50, 50, 0.9);
+    }
+
+    .card:hover .card-text {
+        color: rgba(25, 25, 25, 1); 
+    }
+
+    .btn:hover {
+        background: rgba(255, 255, 255, 1);
+        color: rgba(25, 25, 25, 1); 
+    }
+}
+
+
+
